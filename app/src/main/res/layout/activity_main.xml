@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/circle_blue"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/button_circle_blue"
+        android:onClick="setBGAzul"
+        android:nestedScrollingEnabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/circle_red"
+        android:background="@drawable/button_circle_red"
+        android:onClick="setBGVermelho"
+        android:layout_alignTop="@+id/circle_yellow"
+        android:layout_toRightOf="@+id/switch_colors"
+        android:layout_toEndOf="@+id/switch_colors"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/circle_yellow"
+        android:background="@drawable/button_circle_yellow"
+        android:onClick="setBGAmarelo"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/circle_blue"
+        android:layout_toLeftOf="@+id/switch_colors"
+        android:layout_toStartOf="@+id/switch_colors"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <Switch
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text=" "
+        android:id="@+id/switch_colors"
+        android:background="@drawable/button_circle_random"
+        android:onClick="setBGRandom"
+        android:paddingRight="15dp"
+        android:checked="false"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:layout_below="@+id/circle_red"
+        android:layout_alignLeft="@+id/circle_blue"
+        android:layout_alignStart="@+id/circle_blue"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/circle_save"
+        android:background="@drawable/button_circle_salvar"
+        android:onClick="setSalvarCor"
+        android:text="@string/save_color"
+        android:layout_below="@+id/switch_colors"
+        android:layout_alignLeft="@+id/switch_colors"
+        android:layout_alignStart="@+id/switch_colors"
+        android:layout_marginTop="47dp"
+        android:paddingLeft="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/random"
+        android:id="@+id/textView"
+        android:layout_below="@+id/circle_yellow"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+</RelativeLayout>

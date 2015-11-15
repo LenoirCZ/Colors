@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Colors</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Colors</string>
+    <string name="save_color">SALVAR COR</string>
+    <string name="random">Cores Aleatórias</string>
+</resources>
